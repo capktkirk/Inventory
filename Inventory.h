@@ -13,9 +13,10 @@ class Inventory
     int m_in_stock;
 
   public:
-    //An inventory constructor
+    //An inventory constructor that takes a string (the item) a float (the cost) and an int (the amount)
     Inventory(string,float,int);
     //The sell function that dec.'s m_in_stock.
+    //If there is nothing in stock, it will read out a message telling the user that no more of the item can be purchased.
     void sell();
     friend ostream& operator<<(ostream&, const Inventory&);
 };
