@@ -13,7 +13,9 @@ class Inventory
     int m_in_stock;
 
   public:
+    //An inventory constructor
     Inventory(string,float,int);
+    //The sell function that dec.'s m_in_stock.
     void sell();
     friend ostream& operator<<(ostream&, const Inventory&);
 };
