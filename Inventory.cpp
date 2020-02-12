@@ -18,7 +18,7 @@ void Inventory::sell()
     m_in_stock--;
   }
   else{
-  cout << "Sorry, that item is out of stock." << std::endl;
+    std::cout << "Sorry, that item is out of stock." << std::endl;
   }
 }
 
